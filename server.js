@@ -3,6 +3,10 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import profileRoutes from "./routes/profileRoutes.js";
+import cors from "cors";
+app.use(cors());
+app.use(express.json());
+
 
 dotenv.config();
 connectDB();
